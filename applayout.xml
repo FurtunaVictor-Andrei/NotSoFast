@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="Disconnected"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnShowDevices"
+        app:layout_constraintEnd_toEndOf="@+id/btnShowDevices"
+        app:layout_constraintStart_toStartOf="@+id/btnShowDevices"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnShowDevices"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Show paired devices"
+        app:layout_constraintBottom_toTopOf="@+id/btnForward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnForward"
+        android:layout_width="178dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="144dp"
+        android:text="Forward"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnBackward"
+        android:layout_width="178dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="416dp"
+        android:text="Backward"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="178dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="Left"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackward"
+        app:layout_constraintStart_toStartOf="@+id/btnShowDevices"
+        app:layout_constraintTop_toBottomOf="@+id/btnForward"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="178dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:text="Right"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackward"
+        app:layout_constraintEnd_toEndOf="@+id/btnShowDevices"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnForward"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnShowLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show logs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <ListView
+        android:id="@+id/listViewLogs"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="wrap_content"
+        android:layout_height="315dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackward" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
