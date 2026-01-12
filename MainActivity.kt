@@ -102,7 +102,7 @@ class MainActivity : ComponentActivity() {
                 logListView.visibility = android.view.View.VISIBLE
                 btnFwd.visibility = android.view.View.GONE
                 btnBck.visibility = android.view.View.GONE
-                btnShow.visibility = android.view.View.GONE // Butonul "Show Paired Devices"
+                btnShow.visibility = android.view.View.GONE 
                 statusText.visibility = android.view.View.GONE
                 listView.visibility = android.view.View.GONE
                 btnShowLogs.text = "Show logs"
